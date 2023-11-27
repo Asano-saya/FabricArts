@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 $color-text: #000;
 $color-text-gr: #898989;
 $color-text-wh: #fff;
@@ -222,6 +223,7 @@ ul {
 /*company*/
 .company {
     padding: 100px 0 100px;
+    margin-top: -60px;
 
     &__inner {
         @include inner();
