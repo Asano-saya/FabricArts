@@ -45,10 +45,7 @@ img {
 ul {
     padding-left: 0;
     list-style: none;
-
 }
-
-
 
 /*header*/
 .header {
@@ -91,9 +88,6 @@ ul {
     &__item {
         width: 32%;
     }
-
-
-
 }
 
 /*unit*/
@@ -151,7 +145,6 @@ ul {
     padding-top: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-
 }
 
 /*card*/
@@ -164,7 +157,6 @@ ul {
 
     &__text {
         margin-top: 40px;
-
     }
 }
 
@@ -184,8 +176,6 @@ ul {
     &__item {
         width: 48%;
     }
-
-
 }
 
 /*post*/
@@ -197,7 +187,6 @@ ul {
         margin: 35px 0;
         padding: 5px 10px;
         font-size: 12px;
-
         color: $color-text-wh;
         background-color: $color-bg-pk;
         border-radius: 20px;
@@ -205,13 +194,11 @@ ul {
 
     &__text {
         font-size: 20px;
-
     }
 
     &__list {
         padding-top: 40px;
         margin-bottom: -15px;
-
     }
 
     &__item {
@@ -244,17 +231,12 @@ ul {
         color: $color-text-wh;
         background-image: url(../images/bg_project01.jpg);
         background-size: 100%;
-
-
     }
 
     &__item:last-child {
         background: url(../images/bg_project02.jpg);
         background-size: 100%;
     }
-
-
-
 }
 
 /*information*/
