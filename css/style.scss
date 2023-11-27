@@ -1,0 +1,287 @@
+$color-text: #000;
+$color-text-gr: #898989;
+$color-text-wh: #fff;
+$color-bg-yw: #FDF8EB;
+$color-bg-pk: #E40065;
+
+
+@mixin inner($w: 72%, $mw: 1170px) {
+    max-width: $mw;
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flex($a: center, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin py($y: 100px) {
+    padding-top: $y;
+    padding-bottom: $y;
+}
+
+
+body {
+    color: $color-text;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Helvetica", "Helvetica Neue", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    line-height: (24/14);
+    letter-spacing: (50/1000)+em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+
+}
+
+/*header*/
+.header {
+    padding: 70px 0 100px;
+
+    &__inner {
+        @include inner();
+
+        @include flex();
+    }
+}
+
+/*gnav*/
+.gnav {
+    &__list {
+        @include flex();
+    }
+
+    &__link {
+        padding-left: 30px;
+        color: $color-text;
+        text-decoration: none;
+    }
+
+}
+
+/*works*/
+.works {
+    padding: 100px 0;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__list {
+        margin: 60px 0 0;
+        @include flex();
+    }
+
+    &__item {
+        width: 32%;
+    }
+
+
+
+}
+
+/*unit*/
+.unit {
+    &__catch {
+        font-size: 12px;
+        color: $color-text-gr;
+    }
+
+    &__title {
+        position: relative;
+        display: inline-block;
+        padding: 20px 0 0;
+        font-size: 38px;
+    }
+
+    &__title:before {
+        content: '';
+        position: absolute;
+        left: 30%;
+        bottom: -30px;
+        display: inline-block;
+        width: 120px;
+        height: 1px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: $color-text;
+        border-radius: 20%;
+    }
+
+
+    &__text {
+        margin-top: 60px;
+    }
+
+    &__left {
+        width: 30%;
+    }
+
+    &__right {
+        width: 60%;
+    }
+
+
+}
+
+/*sub*/
+.sub {
+    font-size: 12px;
+    color: $color-text-gr;
+}
+
+/*English*/
+.English {
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
+/*card*/
+.card {
+    &__title {
+        padding: 30px 0 15px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    &__text {
+        margin-top: 40px;
+
+    }
+}
+
+/*project*/
+.project {
+    padding: 100px 0;
+    background-color: $color-bg-yw;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__list {
+        @include flex(top, );
+    }
+
+    &__item {
+        width: 48%;
+    }
+
+
+}
+
+/*post*/
+.post {
+    margin-top: 60px;
+
+    &__title {
+        display: inline-block;
+        margin: 35px 0;
+        padding: 5px 10px;
+        font-size: 12px;
+
+        color: $color-text-wh;
+        background-color: $color-bg-pk;
+        border-radius: 20px;
+    }
+
+    &__text {
+        font-size: 20px;
+
+    }
+
+    &__list {
+        padding-top: 40px;
+        margin-bottom: -15px;
+
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+}
+
+/*company*/
+.company {
+    padding: 100px 0 100px;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__info {
+        @include flex();
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        margin-bottom: -60px;
+    }
+
+    &__item {
+        padding: 160px 0 160px 80px;
+        margin-bottom: 60px;
+        color: $color-text-wh;
+        background-image: url(../images/bg_project01.jpg);
+        background-size: 100%;
+
+
+    }
+
+    &__item:last-child {
+        background: url(../images/bg_project02.jpg);
+        background-size: 100%;
+    }
+
+
+
+}
+
+/*information*/
+.information {
+    padding: 100px 0;
+    background-color: $color-bg-yw;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__list {
+        margin: 60px 0 0;
+        @include flex(top, );
+    }
+
+    &__item {
+        width: 32%;
+    }
+}
+
+/*footer*/
+.footer {
+    padding: 80px 0 200px;
+
+    &__inner {
+        @include inner();
+    }
+
+    .copy {
+        display: block;
+        color: $color-text-gr;
+        text-align: right;
+    }
+}
